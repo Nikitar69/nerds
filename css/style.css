@@ -1,0 +1,32 @@
+body{
+  font: bold  16px/22px roboto;
+  color:  #000000;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font: bold 40px roboto;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* Оформление для преразметки блоков. Удалить по окончательному созданию!!! */
+
+
+
+.main-container{
+  background-color: green;
+}
+
+.slider{
+  background-color: #D4AF37;
+  display : none;
+}
+
+.main-footer{
+  background-color: #10738e;
+}
+/* The END!!!*/
