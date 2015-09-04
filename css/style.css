@@ -1,5 +1,12 @@
+* { 
+  margin: 0; 
+  padding: 0; 
+  border: 0;
+  outline: none;
+  list-style: none;
+}
 body{
-  font: bold  16px/22px roboto;
+  font: bold  16px/22px 'Roboto', sans-serif ;
   color:  #000000;
   margin: 0;
   padding: 0;
