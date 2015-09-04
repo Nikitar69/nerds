@@ -22,7 +22,10 @@ h1{
 }
 /* Оформление для преразметки блоков. Удалить по окончательному созданию!!! */
 
-
+.container{
+  width: 880px;
+  margin: 0 auto;
+}
 
 .main-container{
   background-color: green;
@@ -36,4 +39,12 @@ h1{
 .main-footer{
   background-color: #10738e;
 }
+
+
+/*Временно!!!!!!!!! До замены карты на интерактивную.*/
+.map{
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /* The END!!!*/
