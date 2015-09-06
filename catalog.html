@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Nerds shop</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <header class="main-header">
@@ -81,7 +83,7 @@
         
         <div class="catalog column-right">
           <div class="shop-list">
-            <!-- Эффекты при наведении делать через псевдо элементы? -->
+            
             <article class="shop-item">
               <div class="shop-item-browser">
                 <img src="img/shop/browser.png" alt="browser" width="240" height="30">
@@ -211,24 +213,21 @@
   </div>
 
   <footer class="main-footer">
-    <div class="map-position">
-      
-      <div class="feedback clearfix">
-        <span>Nerds design studio</span> <span>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</span> <span>тел. +375 (29) 188-6-221</span> <a class="button" href="#">Напишите нам</a>
-      </div>
+    <div class="container clearfix">  
+      <section class="footer-social clearfix">
+        <div class="footer-social-sprite">
+          <a href="#" class="social-btn"><i class="vk-icon"></i>vk</a>
+          <a href="#" class="social-btn"><i class="fb-icon"></i>fb</a>
+          <a href="#" class="social-btn"><i class="inst-icon"></i>ins</a>
+        </div>
+        <div class="footer-friend-request">
+          <h3>Давайте дружить, это выгодно!</h3>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+          
+
+      </section>
     </div>
-
-
-    <section class="footer-social">
-      <a href="#" class="social-btn"><i class="vk-icon"></i></a>
-      <a href="#" class="social-btn"><i class="fb-icon"></i></a>
-      <a href="#" class="social-btn"><i class="inst-icon"></i></a>
-
-      <h3>Давайте дружить, это выгодно!</h3>
-
-
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </section>
   </footer>
 </body>
 </html>
