@@ -1,26 +1,27 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <title>Nerds shop</title>
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
   <header class="main-header">
     <div class="container clearfix">
       <div class="logo">
-        <a href="index.html">
-          <img alt="logo Nerds" height="56" src="img/logo.png" width="139">
-        </a>
+        <a href="index.html"><img alt="logo Nerds" height="56" src="img/logo.png" width="139"></a>
       </div>
 
 
       <nav class="main-navigation">
         <ul class="main-menu">
           <li>
-            <a href="#">Студия</a>
+            <a href="index.html">Студия</a>
           </li>
 
 
@@ -29,8 +30,8 @@
           </li>
 
 
-          <li class="main-navigation-active">
-            <span>Магазин</span>
+          <li class="active">
+            <a href="#">Магазин</a>
           </li>
 
 
@@ -47,187 +48,221 @@
     </div>
   </header>
 
+
   <div class="main-container">
     <div class="main-title">
       <h1>Добро пожаловать в магазин готовых макетов</h1>
-    </div> 
+    </div>
+
 
     <div class="container">
-
       <div class="shop-content clearfix">
         <div class="filter column-left">
           <form action="#" class="filter" method="post">
             <fieldset>
               <legend>Стоимость</legend>
-              <div class="slider">Ползунок стоимости</div>
-              <label>От<input type="text" name="price" id="min-price"></label>
-              <label>До<input type="text" name="price" id="max-price"></label>
+
+              <div class="slider">
+                Ползунок стоимости
+              </div>
+              <label>От<input id="min-price" name="price" type="text"></label> <label>До<input id="max-price" name="price" type="text"></label>
             </fieldset>
+
+
             <fieldset>
-              <legend>Сетка:</legend>
-              <label><input type="radio" name="grid" id="" checked>Адаптивная</label>
-              <label><input type="radio" name="grid" id="">Фиксированная</label>
-              <label><input type="radio" name="grid" id="">Резиновая</label>
+              <legend>Сетка:</legend> <label><input checked id="" name="grid" type="radio">Адаптивная</label> <label><input id="" name="grid" type="radio">Фиксированная</label> <label><input id=""
+              name="grid" type="radio">Резиновая</label>
             </fieldset>
+
+
             <fieldset>
-              <legend>Особенности</legend>
-              <label><input type="checkbox" name="features" id="" checked>Слайдер</label>
-              <label><input type="checkbox" name="features" id="">Блок преимуществ</label>
-              <label><input type="checkbox" name="features" id="" checked>Новости</label>
-              <label><input type="checkbox" name="features" id="">Галерея</label>
-              <label><input type="checkbox" name="features" id="">Корзина</label>
+              <legend>Особенности</legend> <label><input checked id="" name="features" type="checkbox">Слайдер</label> <label><input id="" name="features" type="checkbox">Блок преимуществ</label>
+              <label><input checked id="" name="features" type="checkbox">Новости</label> <label><input id="" name="features" type="checkbox">Галерея</label> <label><input id="" name="features" type=
+              "checkbox">Корзина</label>
             </fieldset>
             <button type="submit">Показать</button>
-          </form>  
+          </form>
         </div>
-        
+
+
         <div class="catalog column-right">
-          <div class="shop-list">
-            
+          <div class="shop-list-sort">
+            <span>Сортировать:</span>
+            <span>По цене</span>
+            <span>По типу</span>
+            <span>По функционалу</span>
+            <span>&#9650; &#9660;</span>
+          </div>
+
+          <div class="shop-list clearfix">
+
             <article class="shop-item">
-              <div class="shop-item-browser">
-                <img src="img/shop/browser.png" alt="browser" width="240" height="30">
+              <div class="shop-item-browser"><img alt="browser" height="30" src="img/shop/browser.png" width="240">
               </div>
-              
-              <div class="shop-item-layout">
-                <img src="img/shop/aviator.png" alt="layout" width="239" height="240">
+
+
+              <div class="shop-item-layout"><img alt="layout" height="240" src="img/shop/aviator.png" width="240">
               </div>
+
 
               <div class="hidden-elements">
                 <div class="site-title">
                   <span>Aaviaton</span>
+
                   <p>Интернет-магазин с личным кабинетом</p>
                 </div>
-                <a href="#" class="button">10.000 Р.</a>
+                <a class="button" href="#">10.000 Р.</a>
               </div>
             </article>
 
 
             <article class="shop-item">
-              <div class="shop-item-browser">
-                <img src="img/shop/browser.png" alt="browser" width="240" height="30">
+              <div class="shop-item-browser"><img alt="browser" height="30" src="img/shop/browser.png" width="240">
               </div>
 
-              <div class="shop-item-layout">
-                <img src="img/shop/sunset.png" alt="layout" width="240" height="240">
+
+              <div class="shop-item-layout"><img alt="layout" height="240" src="img/shop/sunset.png" width="240">
               </div>
+
 
               <div class="hidden-elements">
                 <div class="site-title">
                   <span>Aaviaton</span>
+
                   <p>Интернет-магазин с личным кабинетом</p>
                 </div>
-                <a href="#" class="button">10.000 Р.</a>
+                <a class="button" href="#">10.000 Р.</a>
               </div>
             </article>
 
 
             <article class="shop-item">
-              <div class="shop-item-browser">
-                <img src="img/shop/browser.png" alt="browser" width="240" height="30">
+              <div class="shop-item-browser"><img alt="browser" height="30" src="img/shop/browser.png" width="240">
               </div>
 
-              <div class="shop-item-layout">
-                <img src="img/shop/forte.png" alt="layout" width="240" height="240">
+
+              <div class="shop-item-layout"><img alt="layout" height="240" src="img/shop/forte.png" width="240">
               </div>
+
 
               <div class="hidden-elements">
                 <div class="site-title">
                   <span>Aaviaton</span>
+
                   <p>Интернет-магазин с личным кабинетом</p>
                 </div>
-                <a href="#" class="button">10.000 Р.</a>
+                <a class="button" href="#">10.000 Р.</a>
               </div>
             </article>
 
 
             <article class="shop-item">
-              <div class="shop-item-browser">
-                <img src="img/shop/browser.png" alt="browser" width="240" height="30">
+              <div class="shop-item-browser"><img alt="browser" height="30" src="img/shop/browser.png" width="240">
               </div>
 
-              <div class="shop-item-layout">
-                <img src="img/shop/organic.png" alt="layout" width="240" height="240">
+
+              <div class="shop-item-layout"><img alt="layout" height="240" src="img/shop/organic.png" width="240">
               </div>
+
 
               <div class="hidden-elements">
                 <div class="site-title">
                   <span>Aaviaton</span>
+
                   <p>Интернет-магазин с личным кабинетом</p>
                 </div>
-                <a href="#" class="button">10.000 Р.</a>
+                <a class="button" href="#">10.000 Р.</a>
               </div>
             </article>
 
 
             <article class="shop-item">
-              <div class="shop-item-browser">
-                <img src="img/shop/browser.png" alt="browser" width="240" height="30">
+              <div class="shop-item-browser"><img alt="browser" height="30" src="img/shop/browser.png" width="240">
               </div>
 
-              <div class="shop-item-layout">
-                <img src="img/shop/avenue.png" alt="layout" width="240" height="240">
+
+              <div class="shop-item-layout"><img alt="layout" height="240" src="img/shop/avenue.png" width="240">
               </div>
+
 
               <div class="hidden-elements">
                 <div class="site-title">
                   <span>Aaviaton</span>
+
                   <p>Интернет-магазин с личным кабинетом</p>
                 </div>
-                <a href="#" class="button">10.000 Р.</a>
+                <a class="button" href="#">10.000 Р.</a>
               </div>
             </article>
 
 
             <article class="shop-item">
-              <div class="shop-item-browser">
-                <img src="img/shop/browser.png" alt="browser" width="240" height="30">
+              <div class="shop-item-browser"><img alt="browser" height="30" src="img/shop/browser.png" width="240">
               </div>
 
-              <div class="shop-item-layout">
-                <img src="img/shop/dovetail.png" alt="layout" width="239" height="240">
+
+              <div class="shop-item-layout"><img alt="layout" height="240" src="img/shop/dovetail.png" width="239">
               </div>
+
 
               <div class="hidden-elements">
                 <div class="site-title">
                   <span>Aaviaton</span>
+
                   <p>Интернет-магазин с личным кабинетом</p>
                 </div>
-                <a href="#" class="button">10.000 Р.</a>
+                <a class="button" href="#">10.000 Р.</a>
               </div>
             </article>
           </div>
 
 
           <div class="pagination">
-            <a class="active" href="#">1</a> 
-            <a href="#">2</a> 
-            <a href="#">3</a>
-            <a href="#">Следующая</a>
+            <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">Следующая</a>
           </div>
         </div>
       </div>
     </div>
-      
-
   </div>
 
+
   <footer class="main-footer">
-    <div class="container clearfix">  
+    <div class="container clearfix">
       <section class="footer-social clearfix">
         <div class="footer-social-sprite">
-          <a href="#" class="social-btn"><i class="vk-icon"></i>vk</a>
-          <a href="#" class="social-btn"><i class="fb-icon"></i>fb</a>
-          <a href="#" class="social-btn"><i class="inst-icon"></i>ins</a>
+          <a class="social-btn" href="#"><i class="sprite sprite--icon-vk"></i></a> 
+          <a class="social-btn" href="#"><i class="sprite sprite--icon-facebook"></i></a> 
+          <a class="social-btn" href="#"><i class="sprite sprite--icon-instagramm"></i></a>
         </div>
+
+
         <div class="footer-friend-request">
           <h3>Давайте дружить, это выгодно!</h3>
+
+
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
-          
-
       </section>
     </div>
   </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+<!--
+<i class="sprite sprite--icon-basket"></i>
+<i class="sprite sprite--icon-check-off"></i>
+<i class="sprite sprite--icon-check-on"></i>
+<i class="sprite sprite--icon-circle"></i>
+<i class="sprite sprite--icon-circle-dot"></i>
+<i class="sprite sprite--icon-facebook"></i>
+<i class="sprite sprite--icon-instagramm"></i>
+<i class="sprite sprite--icon-vk"></i>
+-->

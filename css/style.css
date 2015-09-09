@@ -1,4 +1,31 @@
+/*
+                                          .   
+                                        .o8   
+oooo d8b  .ooooo.   .oooo.o  .ooooo.  .o888oo 
+`888""8P d88' `88b d88(  "8 d88' `88b   888   
+ 888     888ooo888 `"Y88b.  888ooo888   888   
+ 888     888    .o o.  )88b 888    .o   888 . 
+d888b    `Y8bod8P' 8""888P' `Y8bod8P'   "888" */
 
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* .o8                       .o8              
+"888                      "888              
+ 888oooo.   .ooooo.   .oooo888  oooo    ooo 
+ d88' `88b d88' `88b d88' `888   `88.  .8'  
+ 888   888 888   888 888   888    `88..8'   
+ 888   888 888   888 888   888     `888'    
+ `Y8bod8P' `Y8bod8P' `Y8bod88P"     .8'     
+                                .o..P'      
+                                `Y8P'       
+                                            */
+
+                                              
 body{
   font: bold  16px/22px 'Roboto', sans-serif ;
   color:  #000000;
@@ -13,6 +40,12 @@ h2{
   font: bold 36px 'roboto';
 }
 
+.active a {
+    pointer-events: none; /* делаем ссылку некликабельной */
+    cursor: default;  /* устанавливаем курсор в виде стрелки */
+    color:; /* цвет текста для нективной ссылки */
+}
+
 .clearfix:after {
   content: '';
   display: table;
@@ -21,13 +54,24 @@ h2{
 .container{
   width: 880px;
   margin: 0 auto;
-  outline: 3px solid  red;
+  outline: 3px solid  red; /* Подсветка блоков для позиционирования.*/
+
 }
+                                              
+/*
+oooo                                  .o8                     
+`888                                 "888                     
+ 888 .oo.    .ooooo.   .oooo.    .oooo888   .ooooo.  oooo d8b 
+ 888P"Y88b  d88' `88b `P  )88b  d88' `888  d88' `88b `888""8P 
+ 888   888  888ooo888  .oP"888  888   888  888ooo888  888     
+ 888   888  888    .o d8(  888  888   888  888    .o  888     
+o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b    
+                                                              
+                                                              
+                                                              */
 
-
-/* Оформление хедера!!! */
 .main-header{
-  
+  background-color: #eeeeee;
   padding: 23px 0;
 }
 
@@ -53,8 +97,17 @@ h2{
   
 }
 
-
-/* Оформление Главного контейнера!!! */
+/*
+  .oooooo.                             .              o8o                                 
+ d8P'  `Y8b                          .o8              `"'                                 
+888           .ooooo.  ooo. .oo.   .o888oo  .oooo.   oooo  ooo. .oo.    .ooooo.  oooo d8b 
+888          d88' `88b `888P"Y88b    888   `P  )88b  `888  `888P"Y88b  d88' `88b `888""8P 
+888          888   888  888   888    888    .oP"888   888   888   888  888ooo888  888     
+`88b    ooo  888   888  888   888    888 . d8(  888   888   888   888  888    .o  888     
+ `Y8bood8P'  `Y8bod8P' o888o o888o   "888" `Y888""8o o888o o888o o888o `Y8bod8P' d888b    
+                                                                                          
+                                                                                          
+                                                                                          */
 
 .features-item{
   float: left;
@@ -93,7 +146,6 @@ h2{
 }
 
 .our-project{
-  
   border-bottom:2px solid #eeeeee;
   
 }
@@ -101,7 +153,67 @@ h2{
     
 }
 
-/* оформление футера.*/
+/*Catalog*/
+
+.main-title{
+  text-align: center;
+  background-color: #eeeeee;
+  
+}
+
+.main-title h1{
+  width: 800px;
+  vertical-align: middle;
+  font: 40px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding-bottom:95px;
+  padding-top: 55px;
+}
+
+.filter{
+  float: left;
+  width: 240px;
+}
+
+.catalog{
+  float: right;
+  width: 560px;
+}
+
+.hidden-elements{
+  display: none;
+}
+
+.shop-item-browser{
+  height: 30px;
+}
+
+.shop-item{
+  float: left;
+  width: 240px;
+  padding-right: 80px;
+  padding-bottom: 80px;
+  margin: 0;
+}
+.shop-item:nth-child(2n+2){
+  padding-right: 0;
+
+}
+
+
+
+/*
+oooooooooooo                     ooooooooooooo                    
+`888'     `8                     8'   888   `8                    
+ 888          .ooooo.   .ooooo.       888       .ooooo.  oooo d8b 
+ 888oooo8    d88' `88b d88' `88b      888      d88' `88b `888""8P 
+ 888    "    888   888 888   888      888      888ooo888  888     
+ 888         888   888 888   888      888      888    .o  888     
+o888o        `Y8bod8P' `Y8bod8P'     o888o     `Y8bod8P' d888b    
+                                                                  
+                                                                  
+                                                                  */
 
 .map{
   position: relative;
@@ -121,79 +233,132 @@ h2{
 }
 
 .footer-social{
-  height: 215px;
+  
   margin:0;
   padding: 0;
 }
 
 .footer-social-sprite{
-  float: left;
-  width: 240px;
+  
 }
 
 .footer-friend-request{
 
 }
-/* Оформление для преразметки блоков. Удалить по окончательному созданию!!! */
 
-
-.main-container{
-  background-color: #ffffff;
-
+.social-btn{
+  position: relative;
+  display: inline-block;
+  background-color: #e1e1e1;
+  width: 63px;
+  height: 63px;
+  border-radius: 100%;
+  margin-right: 27px;
+}
+.social-btn:last-child{
+  margin-right:0;
 }
 
-.slider{
-  background-color: #D4AF37;
-  display : none;
+.sprite--icon-vk {
+  position: absolute;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  display: block;
+  left:18px;
+  top:24px;
+  width: 26px;
+  height: 15px;
+  background-position: -102px -97px;
+}
+.sprite--icon-facebook {
+  position: absolute;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  display: block;
+  left:26px;
+  top:20px;
+  width: 12px;
+  height: 22px;
+  background-position: -102px -55px;
 }
 
-.main-footer{
-  background-color: #10738e;
+.sprite--icon-instagramm {
+  position: absolute;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  display: block;
+  left:21px;
+  top:21px;
+  width: 21px;
+  height: 21px;
+  background-position: -10px -97px;
 }
 
 
-/*Временно!!!!!!!!! До замены карты на интерактивную.*/
-.map{
-  width: 1200px;
-  margin: 0 auto;
+/*
+ .oooooo..o                      o8o      .             
+d8P'    `Y8                      `"'    .o8             
+Y88bo.      oo.ooooo.  oooo d8b oooo  .o888oo  .ooooo.  
+ `"Y8888o.   888' `88b `888""8P `888    888   d88' `88b 
+     `"Y88b  888   888  888      888    888   888ooo888 
+oo     .d8P  888   888  888      888    888 . 888    .o 
+8""88888P'   888bod8P' d888b    o888o   "888" `Y8bod8P' 
+             888                                        
+            o888o                                       
+                                                        */
+/*.sprite {
+    background-color: #e1e1e1;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+    
 }
 
-/* The END for index!!!*/
-
-
-/* Стили для каталога!*/
-  /*Почему при указании ширины, выпадает текст из потока.*/
-.main-title{
-  max-width: 880px;
+.sprite--icon-basket {
+    width: 15px;
+    height: 15px;
+    background-position: -10px -10px;
 }
 
-.main-title h1{
-   text-align: center;
-  vertical-align: middle;
-  font: 40px;
-  text-transform: uppercase;
+.sprite--icon-check-off {
+    width: 23px;
+    height: 23px;
+    background-position: -45px -10px;
 }
 
-.filter{
-  float: left;
-  width: 240px;
+.sprite--icon-check-on {
+    width: 27px;
+    height: 23px;
+    background-position: -10px -53px;
 }
 
-.catalog{
-  float: right;
-  width: 560px;
+.sprite--icon-circle {
+    width: 25px;
+    height: 25px;
+    background-position: -57px -53px;
 }
 
-.hidden-elements{
-  display: none;
+.sprite--icon-circle-dot {
+    width: 25px;
+    height: 25px;
+    background-position: -102px -10px;
 }
 
-.shop-item{
-  float: left;
-  width: 240px;
-  padding-right: 80px;
-  margin: 0;
+.sprite--icon-facebook {
+    width: 12px;
+    height: 22px;
+    background-position: -102px -55px;
 }
-.shop-item:nth-child(2n+2){
-  padding: 0;
+
+.sprite--icon-instagramm {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -97px;
 }
+
+.sprite--icon-vk {
+    width: 26px;
+    height: 15px;
+    background-position: -102px -97px;
+}
+*/
