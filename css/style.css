@@ -14,6 +14,83 @@ d888b    `Y8bod8P' 8""888P' `Y8bod8P'   "888" */
   text-decoration: none;
 }
 
+/*
+oooooooooooo                           .                                                .o8           
+`888'     `8                         .o8                                               "888           
+ 888          .ooooo.  ooo. .oo.   .o888oo         ooo. .oo.    .ooooo.  oooo d8b  .oooo888   .oooo.o 
+ 888oooo8    d88' `88b `888P"Y88b    888           `888P"Y88b  d88' `88b `888""8P d88' `888  d88(  "8 
+ 888    "    888   888  888   888    888   8888888  888   888  888ooo888  888     888   888  `"Y88b.  
+ 888         888   888  888   888    888 .          888   888  888    .o  888     888   888  o.  )88b 
+o888o        `Y8bod8P' o888o o888o   "888"         o888o o888o `Y8bod8P' d888b    `Y8bod88P" 8""888P' 
+                                                                                                      
+                                                                                                      
+                                                                                                      */
+@charset "UTF-8";
+
+ @font-face {
+  font-family: 'symbols-nerds';
+  src: url('../font/symbols-nerds.eot?27841936');
+  src: url('../font/symbols-nerds.eot?27841936#iefix') format('embedded-opentype'),
+       url('../font/symbols-nerds.woff?27841936') format('woff'),
+       url('../font/symbols-nerds.ttf?27841936') format('truetype'),
+       url('../font/symbols-nerds.svg?27841936#symbols-nerds') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols-nerds';
+    src: url('../font/symbols-nerds.svg?27841936#symbols-nerds') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "symbols-nerds";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-basket:before { content: '\62'; } /* 'b' */
+.icon-facebook:before { content: '\66'; } /* 'f' */
+.icon-twitter:before { content: '\74'; } /* 't' */
+.icon-vk:before { content: '\76'; } /* 'v' */
+.icon-up-dir:before { content: '\25b2'; } /* '▲' */
+.icon-down-dir:before { content: '\25bc'; } /* '▼' */
+.icon-circle:before { content: '\25cb'; } /* '○' */
+.icon-circle-dot:before { content: '\25cf'; } /* '●' */
+.icon-check-off:before { content: '\2610'; } /* '☐' */
+.icon-check-on:before { content: '\2611'; } /* '☑' */
+.icon-instagramm:before { content: '📷'; } /* '\1f4f7' */
+
 /* .o8                       .o8              
 "888                      "888              
  888oooo.   .ooooo.   .oooo888  oooo    ooo 
@@ -27,7 +104,7 @@ d888b    `Y8bod8P' 8""888P' `Y8bod8P'   "888" */
 
                                               
 body{
-  font: bold  16px/22px 'Roboto', sans-serif ;
+  font: medium  16px/22px 'Roboto', sans-serif ;
   color:  #000000;
   margin: 0;
   padding: 0;
@@ -54,8 +131,7 @@ h2{
 .container{
   width: 880px;
   margin: 0 auto;
-  outline: 3px solid  red; /* Подсветка блоков для позиционирования.*/
-
+  position: relative;
 }
                                               
 /*
@@ -72,30 +148,63 @@ o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b
 
 .main-header{
   background-color: #eeeeee;
-  padding: 23px 0;
+  min-height: 120px;
 }
 
-.logo{
+.main-header .logo{
   float:left;
   width:140px;
+  margin-top:27px;
 }
 
 .main-navigation{
   float: left;
-  width: 440px;
-  vertical-align: middle; 
-}
+  width: 400px;
+  
+  margin-top:60px;
+  margin-left: 180px;
 
-.basket{
-  float: right;
-  width: 100px;
-
+  text-transform: uppercase;
 }
 
 .main-menu li{
   display: inline-block;
-  
+  margin-right: 41px;
+    
+  font-size: 14px
 }
+.main-menu li:last-child{
+  margin-right: 0;
+}
+.main-menu a, .basket a{
+  display: block;
+  color: #000000;
+}
+
+.basket{
+  float: right;
+  display: block;
+  float: right;
+  width: 90px;
+  margin-top:60px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.main-menu a:hover, .basket a:hover{
+  color: #fb565a;
+}
+
+.main-menu a:active, .basket a:active{
+  color: #000000;
+  opacity: 0.4;
+}
+
+.main-menu .active{
+  border-bottom: 2px solid #fb565a;
+  padding-bottom: 8px;
+}
+
 
 /*
   .oooooo.                             .              o8o                                 
@@ -108,50 +217,195 @@ o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b
                                                                                           
                                                                                           
                                                                                           */
+/*Стили для Особенностей студии.*/
+.features-row{
+  margin-top: 80px;
+  padding-bottom: 80px;
+  border-bottom:2px solid #eeeeee;
+}
 
 .features-item{
   float: left;
   width: 240px;
-  padding-right: 80px;
+  margin-right: 80px;
 }
 
 .features-item:last-child{
-  padding-right: 0;
+  margin-right: 0;
 }
 
-.features-row{
-  padding-top: 80px;
-  padding-bottom: 80px;
-  border-bottom:2px solid #eeeeee;
+.features-title{
+  margin-top:30px;
+  font: 18px;
+  text-transform: uppercase;
 }
+
+.features-item p{
+  margin-top:30px;
+  font-size: 15px;  /* ВААААААААААААААААААААААААААААААЖНОООООООООО. Не удается настроить текст так, как он выглядел в макете. При размере шрифта к в макете, он ведет себя немного иначе.*/
+  color: #283136;
+}
+
+.features-item .button{
+  margin-top:30px;
+  display: inline-block;
+  width: 140px;
+  height: 38px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #fb565a;
+  color: #ffffff;
+  line-height: 40px;
+}
+
+.features-item .button-green{
+  background-color: #00ca74;
+}
+
+.features-item .button-yellow{
+  background-color: #efc84a;
+}
+
+.features-item .button:hover, .feedback .button:hover{
+  background-color: #d6494d;
+}
+
+.features-item .button:active, .feedback .button:active{
+  background-color: #b63538;
+}
+
+.features-item .button-yellow:hover{
+  background-color: #d6ae2c;
+}
+
+.features-item .button-yellow:active{
+  background-color: #c09b24;
+}
+
+.features-item .button-green:hover{
+  background-color: #01a25e;
+}
+
+.features-item .button-green:active{
+  background-color: #009053;
+}
+
+/*Стили для основного контента.*/
 .content-row{
   border-bottom:2px solid #eeeeee;
-
+  margin-top: 80px;
 }
-.content-left{
+
+.content-main{
   float: left;
-  width: 610px;
+  width: 600px;
 }
 
-.content-right{
+.content-main p{
+  margin-top:23px;
+}
+
+.content-logo{
   float: right;
-  width: 250px;
-}
-.content-right .logo{
-  display: block;
-  padding:0 31px;
-  width: 188px;
-  outline: 2px solid red;
-  
+  width:240px;
 }
 
-.our-project{
-  border-bottom:2px solid #eeeeee;
-  
+.content-logo img{
+  display: block;
+  margin: 0 auto;
+}
+
+.content-logo span{
+  position: relative;
+  display: inline-block;
+  width: 240px;
+  text-align: center;
+  margin-top:30px;
+  text-transform: uppercase;
+}
+.content-logo span:before{
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 2px;
+  background-color: #f4f4f4;
+  top:10px;
+  left: 0;
+}
+.content-logo span:after{
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 2px;
+  background-color: #f4f4f4;
+  top:10px;
+  right: 0;
+}
+
+.content-work-info{
+  margin-top:50px;
+}
+
+
+.details-left{
+  float: left;
+  width: 460px;
+}
+
+.details-right{
+  float: right;
+  width: 240px;
+}
+
+.details .caption{
+  text-transform: uppercase;
+}
+.details ul{
+  margin-top:30px;
+}
+.performance_list{
+  position: relative;
+}
+.performance_list-item {
+    position: relative;
+    padding-left: 38px;
+    margin-bottom: 21px;
+}
+
+.performance_list-item:before {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #fc8e91;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+
+/*Стили для описания наших проектов.*/
+.our-project-container{
+  display: inline-block;
+  width: 880px;
+  margin: 50px 0 90px 0;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #eeeeee;
 }
 .our-project-item{
-    
+  display: inline-block;
+  margin-right: 130px;
+  vertical-align: middle;
+  opacity: 0.2;
 }
+
+.our-project-item:nth-child(3n){
+  margin-right: 0;
+}
+
+.our-project-item:hover, .our-project-item:active{
+  opacity: 1;
+}
+
+
 
 /*Catalog*/
 
@@ -215,36 +469,76 @@ o888o        `Y8bod8P' `Y8bod8P'     o888o     `Y8bod8P' d888b
                                                                   
                                                                   */
 
-.map{
+.main-footer-map{
   position: relative;
+  background-image: url(../img/map-cap.png);
+  width: 100%;
+  height: 416px;
 }
-.map .feedback{
+
+.footer-bottom{
+  margin: 75px 0;
+}
+
+.feedback{
   position: absolute;
+  display: block;
   width: 250px;
-  height: 240px;
+  background-color:#ffffff;
+  padding-left:20px;
+  padding-bottom: 25px;
   top:88px;
-  left:160px;
-  background: #fff;
+  left:0;
 }
-.map img:nth-child(2){
+
+.feedback .name{
+  text-transform: uppercase;
+  font-weight: bold;
+  
+  padding-top:33px;
+}
+
+.feedback .address{
+  padding-top:25px;
+  margin-bottom: 28px;
+  font-size: 16px;
+  width: 200px
+}
+
+.feedback .phone{
+  margin-bottom:34px;
+}
+
+.feedback .button{
+  width: 205px;
+  min-height: 38px;
+  display: block;
+  background-color: #fb565a;
+  line-height: 40px;
+  text-align:center;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-map-logo{
   position: absolute;
-  top:110px;
-  right: 50px;
+  top: 113px;
+  right: -30px;
 }
 
 .footer-social{
-  
   margin:0;
   padding: 0;
 }
 
+
 .footer-social-sprite{
-  
+  float:left;
+  width: 255px;
+  margin-right: 55px;
 }
 
-.footer-friend-request{
-
-}
 
 .social-btn{
   position: relative;
@@ -294,6 +588,15 @@ o888o        `Y8bod8P' `Y8bod8P'     o888o     `Y8bod8P' d888b
   background-position: -10px -97px;
 }
 
+.footer-friend-request{
+  float:left;
+  width: 570px;
+}
+.footer-friend-request h3{
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom:10px;
+}
 
 /*
  .oooooo..o                      o8o      .             
@@ -362,3 +665,21 @@ oo     .d8P  888   888  888      888    888 . 888    .o
     background-position: -102px -97px;
 }
 */
+
+
+
+/*
+ .oooooo..o oooo   o8o        .o8                     
+d8P'    `Y8 `888   `"'       "888                     
+Y88bo.       888  oooo   .oooo888   .ooooo.  oooo d8b 
+ `"Y8888o.   888  `888  d88' `888  d88' `88b `888""8P 
+     `"Y88b  888   888  888   888  888ooo888  888     
+oo     .d8P  888   888  888   888  888    .o  888     
+8""88888P'  o888o o888o `Y8bod88P" `Y8bod8P' d888b    
+                                                      
+                                                      
+                                                      */
+
+.main-slider{
+  display: none;
+}
