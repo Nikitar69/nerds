@@ -45,15 +45,21 @@
     <div class="container">
       <div class="shop-content clearfix">
         <div class="filter column-left">
-          <form action="#" class="filter" method="post">
-            <fieldset>
-              <legend>Стоимость</legend>
-
-              <div class="slider">
-                Ползунок стоимости
+          <form action="#" class="filter" method="GET">
+            <fieldset>Стоимость:</fieldset>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
               </div>
-              <label>От<input id="min-price" name="price" type="text"></label> <label>До<input id="max-price" name="price" type="text"></label>
-            </fieldset>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
+            </div>
 
 
             <fieldset>
@@ -78,7 +84,7 @@
             <span>По цене</span>
             <span>По типу</span>
             <span>По функционалу</span>
-            <span>&#9650; &#9660;</span>
+            <span>&#9660; &#9650;</span>
           </div>
 
           <div class="shop-list clearfix">
@@ -90,8 +96,8 @@
               <div class="shop-item-layout">
                 <div class="shop-item-description">
                   <header>aviator</header>
-                  <p>Интернет-магазин с личным кабинетом</p>
-                  <a class="button" href="#">10000 Р.</a>
+                  <p>Одностраничный макет с авторским дизайном</p>
+                  <a class="button" href="#">8000 Р.</a>
                 </div>
                 
               </div>
@@ -104,7 +110,7 @@
 
               <div class="shop-item-layout">
                 <div class="shop-item-description">
-                  <header>aviator</header>
+                  <header>sunset</header>
                   <p>Интернет-магазин с личным кабинетом</p>
                   <a class="button" href="#">10000 Р.</a>
                 </div>
@@ -119,8 +125,38 @@
 
               <div class="shop-item-layout">
                 <div class="shop-item-description">
-                  <header>aviator</header>
-                  <p>Интернет-магазин с личным кабинетом</p>
+                  <header>FORTE</header>
+                  <p>Отличный макет для личного блога</p>
+                  <a class="button" href="#">5000 Р.</a>
+                </div>
+                
+              </div>
+            </article>
+
+            <article class="shop-item">
+              <div class="shop-item-browser">
+                <img alt="browser" height="30" src="img/shop/browser.png" width="240">
+              </div>
+
+              <div class="shop-item-layout">
+                <div class="shop-item-description">
+                  <header>Modern Organic THAI</header>
+                  <p>Сайт для ресторана быстрого питания</p>
+                  <a class="button" href="#">12000 Р.</a>
+                </div>
+                
+              </div>
+            </article>
+
+            <article class="shop-item">
+              <div class="shop-item-browser">
+                <img alt="browser" height="30" src="img/shop/browser.png" width="240">
+              </div>
+
+              <div class="shop-item-layout">
+                <div class="shop-item-description">
+                  <header>AVENUE</header>
+                  <p>Макет для блога  о путешествиях</p>
                   <a class="button" href="#">10000 Р.</a>
                 </div>
                 
@@ -134,39 +170,9 @@
 
               <div class="shop-item-layout">
                 <div class="shop-item-description">
-                  <header>aviator</header>
-                  <p>Интернет-магазин с личным кабинетом</p>
-                  <a class="button" href="#">10000 Р.</a>
-                </div>
-                
-              </div>
-            </article>
-
-            <article class="shop-item">
-              <div class="shop-item-browser">
-                <img alt="browser" height="30" src="img/shop/browser.png" width="240">
-              </div>
-
-              <div class="shop-item-layout">
-                <div class="shop-item-description">
-                  <header>aviator</header>
-                  <p>Интернет-магазин с личным кабинетом</p>
-                  <a class="button" href="#">10000 Р.</a>
-                </div>
-                
-              </div>
-            </article>
-
-            <article class="shop-item">
-              <div class="shop-item-browser">
-                <img alt="browser" height="30" src="img/shop/browser.png" width="240">
-              </div>
-
-              <div class="shop-item-layout">
-                <div class="shop-item-description">
-                  <header>aviator</header>
-                  <p>Интернет-магазин с личным кабинетом</p>
-                  <a class="button" href="#">10000 Р.</a>
+                  <header>DOVETAIL</header>
+                  <p>Интернет-магазин с галереей товаров</p>
+                  <a class="button" href="#">14000 Р.</a>
                 </div>
                 
               </div>

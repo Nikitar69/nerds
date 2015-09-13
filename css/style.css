@@ -123,7 +123,10 @@ h1{
 h2{
   font: 500 36px/36px 'roboto';
 }
-
+fieldset{
+  font:500 18px/30px 'roboto';
+  text-transform: uppercase;
+}
 .active a {
     pointer-events: none; /* делаем ссылку некликабельной */
     cursor: default;  /* устанавливаем курсор в виде стрелки */
@@ -250,8 +253,7 @@ o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b
 
 .features-item p{
   margin-top:18px;
-  font-size: 15px;
-  font-weight: 500;  /* ВААААААААААААААААААААААААААААААЖНОООООООООО. Не удается настроить текст так, как он выглядел в макете. При размере шрифта к в макете, он ведет себя немного иначе.*/
+  font:500 15px/22px 'roboto';
   color: #283136;
   letter-spacing: -.035em;
 }
@@ -262,6 +264,8 @@ o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b
   width: 140px;
   height: 38px;
   text-align: center;
+  font: 500 12px 'roboto';
+  text-transform: uppercase;
   border-radius: 4px;
   background-color: #fb565a;
   color: #ffffff;
@@ -304,7 +308,7 @@ o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b
 .content-row{
   border-bottom:2px solid #eeeeee;
   margin-top: 70px;
-  padding-bottom: 50px;
+  padding-bottom: 48px;
 }
 
 .content-main{
@@ -375,7 +379,7 @@ o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b
   text-transform: uppercase;
 }
 .details ul{
-  margin-top:24px;
+  margin-top:21px;
 }
 .performance_list{
   position: relative;
@@ -383,7 +387,7 @@ o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b
 .performance_list-item {
     position: relative;
     padding-left: 35px;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
 }
 
 .performance_list-item:before {
@@ -400,7 +404,7 @@ o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b
 .our-project-container{
   display: inline-block;
   width: 880px;
-  margin: 42px 0 90px 0;
+  margin: 44px 0 85px 0;
   padding-bottom: 30px;
   border-bottom: 2px solid #eeeeee;
 }
@@ -427,17 +431,17 @@ o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b
 .main-title{
   text-align: center;
   background-color: #eeeeee;
-  
+  margin-bottom:68px;
 }
 
 .main-title h1{
   width: 800px;
   vertical-align: middle;
-  font: 40px;
+  font: 500 40px 'roboto'; 
   text-transform: uppercase;
   margin: 0 auto;
   padding-bottom:95px;
-  padding-top: 55px;
+  padding-top: 27px;
 }
 
 .filter{
@@ -445,10 +449,103 @@ o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b
   width: 240px;
 }
 
+.range-filter {
+  width: 240px;
+  margin: 50px auto;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-bottom: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  width: 60px;
+  margin-left: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #f1f1f1;
+}
+
+/* Правая часть!*/
 .catalog{
   float: right;
   width: 560px;
 }
+
+.shop-list-sort{
+  margin-bottom: 21px;
+
+  font: 500 12px/18px 'roboto';
+  text-transform: uppercase;
+}
+
+.shop-list-sort span{
+  margin-right:40px;
+}
+.shop-list-sort span:last-child{
+  margin-right:0;
+}
+
 .shop-item{
   float: left;
   width: 240px;
@@ -463,6 +560,7 @@ o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b
 .shop-item-browser{
   height: 30px;
   width: 240px;
+  opacity: 0.1;
 }
 article:nth-child(1) .shop-item-layout{ background-image: url(../img/shop/aviator.png);}
 article:nth-child(2) .shop-item-layout{ background-image: url(../img/shop/sunset.png);}
@@ -493,17 +591,19 @@ article:nth-child(6) .shop-item-layout{ background-image: url(../img/shop/doveta
   text-align: center;
   text-transform: uppercase;
   font: bold 18px/8.5px;
+  width: 140px;
+  margin: 0 auto;
 }
 
 .shop-item-description p{
-  width: 140px;
+  width: 160px;
   text-align: center;
   margin: 0 auto;
   margin-bottom:32px;
   font-size: 14px;
 }
 
-.shop-item-description a{
+.shop-item-description .button{
   display: block;
   text-align: center;
   line-height: 40px;
@@ -512,10 +612,17 @@ article:nth-child(6) .shop-item-layout{ background-image: url(../img/shop/doveta
   margin: 0 auto;
   background: #fb565a;
   color: #ffffff;
+  border-radius: 3px;
 }
-
-.shop-item:hover .shop-item-description{
+.shop-item-description .button:hover{
+  background: #d6494d; 
+}
+.shop-item-description .button:active{
+  background: #b63538;
+}
+.shop-item:hover .shop-item-description, .shop-item:hover .shop-item-browser{
   display: block;
+  opacity: 1;
 }
 
 
@@ -542,7 +649,7 @@ o888o        `Y8bod8P' `Y8bod8P'     o888o     `Y8bod8P' d888b
 }
 
 .footer-bottom{
-  margin: 67px 0;
+  margin: 75px 0;
 }
 
 .feedback{
@@ -560,12 +667,12 @@ o888o        `Y8bod8P' `Y8bod8P'     o888o     `Y8bod8P' d888b
   text-transform: uppercase;
   font-weight: bold;
   
-  padding-top:33px;
+  padding-top:29px;
 }
 
 .feedback .address{
-  padding-top:25px;
-  margin-bottom: 28px;
+  padding-top:15px;
+  margin-bottom: 15px;
   font-size: 16px;
   width: 200px;
   color: #666666;
@@ -573,20 +680,21 @@ o888o        `Y8bod8P' `Y8bod8P'     o888o     `Y8bod8P' d888b
 }
 
 .feedback .phone{
-  margin-bottom:34px;
+  margin-bottom:30px;
   color: #666666;
 }
 
 .feedback .button{
   width: 205px;
-  min-height: 38px;
+  height: 37px;
   display: block;
   background-color: #fb565a;
-  line-height: 40px;
   text-align:center;
   border-radius: 3px;
   text-transform: uppercase;
   color: #ffffff;
+  font: 500 12px/18px 'roboto'; 
+  line-height: 40px;
 }
 
 .footer-map-logo{
@@ -604,7 +712,7 @@ o888o        `Y8bod8P' `Y8bod8P'     o888o     `Y8bod8P' d888b
 .footer-social-sprite{
   float:left;
   width: 255px;
-  margin-right: 55px;
+  margin-right: 65px;
 }
 
 
@@ -615,10 +723,16 @@ o888o        `Y8bod8P' `Y8bod8P'     o888o     `Y8bod8P' d888b
   width: 63px;
   height: 63px;
   border-radius: 100%;
-  margin-right: 22px;
+  margin-right: 23px;
 }
 .social-btn:last-child{
   margin-right:0;
+}
+.social-btn:hover{
+  background-color:#fb565a;
+}
+.social-btn:active{
+  background-color:#d6494d;
 }
 
 .sprite--icon-vk {
@@ -658,12 +772,13 @@ o888o        `Y8bod8P' `Y8bod8P'     o888o     `Y8bod8P' d888b
 
 .footer-friend-request{
   float:left;
-  width: 570px;
+  width: 550px;
+  margin-top:6px;
 }
 .footer-friend-request h3{
   font-size: 36px;
   font-weight: bold;
-  margin-bottom:10px;
+  margin-bottom:17px;
 }
 
 /*
@@ -822,7 +937,7 @@ oo     .d8P  888   888  888   888  888    .o  888
   cursor: pointer;
   display: inline-block;
   height: 8px;
-  margin: 25px 12px 0 16px;
+  margin: 4px;
   position: relative;
   width: 8px;
   -webkit-border-radius: 50%;
@@ -845,18 +960,20 @@ oo     .d8P  888   888  888   888  888    .o  888
 }
 
 .wrapper-slider label:after {
-  border: 2px solid #ddd;
+  background-color: #fff;
   content: " ";
   display: block;
-  height: 12px;
-  left: -4px;
+  height: 10px;
+  left: 60px;
   position: absolute;
-  top: -4px;
-  width: 12px;
+  top: -56px;
+  width: 10px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
+  padding: 0;
+  margin: 0;
 }
 
 /*
@@ -872,9 +989,45 @@ o.  )88b  888   888  888   888  888    .o  888             888   888  888    .o 
                                                                                                             */
 .slider-description{
   float: left;
-  width: 400px;
+  margin-top: 35px;
 }
-.slides img{
-  float: right;
-  width: 400px;
+
+.slide1 .slider-description{
+  width: 360px;
 }
+
+.slide2 .slider-description{
+  width: 480px;
+}
+
+.slide3 .slider-description{
+  width: 470px;
+}
+
+.slider-description-title{
+  font: 500 36px/36px 'roboto';
+}
+
+.slider-description-row{
+  margin-top:20px;
+}
+
+.slider-button a{
+  margin-top:25px;
+  display: block;
+  width: 240px;
+  height: 40px;
+  text-align: center;
+  background-color: #fb565a;
+  border-radius: 3px;
+  color: #ffffff;
+  font: 500 12px/18px 'roboto';
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+.slides:nth-child(1) img{ float: right; width: 338px; margin-top:14px;}
+.slides:nth-child(2) img{ float: right; width: 230px; margin-top:14px;}
+.slides:nth-child(3) img{ float: right; width: 333px; margin-top:14px;}
+
+
