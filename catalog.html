@@ -46,7 +46,7 @@
       <div class="shop-content clearfix">
         <div class="filter column-left">
           <form action="#" class="filter" method="GET">
-            <fieldset>Стоимость:</fieldset>
+            <fieldset><legend>Стоимость:</legend></fieldset>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
@@ -62,18 +62,23 @@
             </div>
 
 
-            <fieldset>
-              <legend>Сетка:</legend> <label><input checked id="" name="grid" type="radio">Адаптивная</label> <label><input id="" name="grid" type="radio">Фиксированная</label> <label><input id=""
-              name="grid" type="radio">Резиновая</label>
+            <fieldset class="filter-input">
+              <legend>Сетка:</legend> 
+              <input checked id="adaptive" name="grid" type="radio"><label for="adaptive"><i class="sprite sprite--icon-circle"></i> Адаптивная</label> 
+              <input id="fixed" name="grid" type="radio"><label for="fixed"><i class="sprite sprite--icon-circle"></i>Фиксированная</label> 
+              <input id="rubber" name="grid" type="radio"><label for="rubber"><i class="sprite sprite--icon-circle"></i>Резиновая</label>
             </fieldset>
 
 
-            <fieldset>
-              <legend>Особенности</legend> <label><input checked id="" name="features" type="checkbox">Слайдер</label> <label><input id="" name="features" type="checkbox">Блок преимуществ</label>
-              <label><input checked id="" name="features" type="checkbox">Новости</label> <label><input id="" name="features" type="checkbox">Галерея</label> <label><input id="" name="features" type=
-              "checkbox">Корзина</label>
+            <fieldset class="filter-input">
+              <legend>Особенности:</legend> 
+              <input checked id="slider" name="features" type="checkbox"><label for="slider"><i class="sprite sprite--icon-check-off"></i>Слайдер</label> 
+              <input id="advantages" name="features" type="checkbox"><label for="advantages"><i class="sprite sprite--icon-check-off"></i>Блок преимуществ</label>
+              <input checked id="news" name="features" type="checkbox"><label for="news"><i class="sprite sprite--icon-check-off"></i>Новости</label> 
+              <input id="gallery" name="features" type="checkbox"><label for="gallery"><i class="sprite sprite--icon-check-off"></i>Галерея</label> 
+              <input id="basket" name="features" type="checkbox"><label for="basket"><i class="sprite sprite--icon-check-off"></i>Корзина</label>
             </fieldset>
-            <button type="submit">Показать</button>
+            <button class="filter-button" type="submit">Показать</button>
           </form>
         </div>
 
@@ -84,7 +89,7 @@
             <span>По цене</span>
             <span>По типу</span>
             <span>По функционалу</span>
-            <span>&#9660; &#9650;</span>
+            <span>&#9660;&#9650;</span>
           </div>
 
           <div class="shop-list clearfix">
@@ -181,7 +186,12 @@
 
 
           <div class="pagination">
-            <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">Следующая</a>
+            <ul>   
+              <span>1</span> 
+              <a href="#">2</a> 
+              <a href="#">3</a> 
+              <a href="#">Следующая</a>
+            
           </div>
         </div>
       </div>
@@ -194,7 +204,7 @@
       <div class="container clearfix">
         <div class="feedback">
           <div class="name">Nerds design studio</div>
-          <div class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div> 
+          <div class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8</div> 
           <div class="phone">тел. +375 (29) 188-6-221</div> 
           <a class="button" href="#">Напишите нам</a>
         </div>
